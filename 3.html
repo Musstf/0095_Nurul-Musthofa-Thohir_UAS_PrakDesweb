@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Data</title>
+</head>
+
+<body>
+    <form>
+        <label>Nama:</label>
+        <input type="text" id="nama"><br><br>
+        <label>NIM:</label>
+        <input type="text" id="nim"><br><br>
+        <label>Kelas:</label>
+        <input type="text" id="kelas"><br><br>
+        <button type="button" onclick="submitData()">Submit</button>
+    </form>
+    <p id="output"></p>
+    <script>
+        function submitData() {
+            var nama = document.getElementById("nama").value;
+            var nim = document.getElementById("nim").value;
+            var kelas = document.getElementById("kelas").value;
+            document.getElementById("output").innerHTML = "Nama: " + nama + "<br>NIM: " + nim + "<br>Kelas: " + kelas;
+        }
+    </script>
+</body>
+
+</html>
